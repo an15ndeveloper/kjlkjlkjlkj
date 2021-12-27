@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    text-transform: capitalize;
+    padding: 0px;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+}
+
+.body{
+    width: 210mm;
+    height: auto;
+    /* border: 1px solid black; */
+    margin:auto ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+
+}
+.card{
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 4px double #032a41e6;
+    width: 355px;
+    overflow: hidden;
+    height: 230px;
+    background-color: rgba(202, 212, 231, 0.089);
+
+}
+.card-1{
+    margin-right: 20px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.navbar .logo img{
+    width: 20px;
+    display: block;
+    margin: auto;
+}
+.navbar .logo {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    }
+.navbar .heading h1 {
+    font-size: 8px;
+    line-height: 9px;
+    text-align: center; 
+    color: #0a242c;
+    text-transform: capitalize;
+}
+.navbar .main-heading h1{
+    font-size: 15px;
+    color: #032a41e6;
+}
+h1#small{
+    /* color:  black; */
+    font-size: 10px;
+    text-align: center;
+}
+.qr-scaner .image {
+    /* border: 1px solid black; */
+    width: 80px;
+    margin: auto;
+    margin-top: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.qr-scaner .image img{
+    height: inherit;
+}
+.qr-scaner .image h1{
+    font-size: 11px;
+}
+.qr-scaner .image a{
+    font-size: 10px;
+}
+
+
+/* card 2nd styling // */
+
+ .card-2 .heading {
+    border-bottom: 1px solid rgb(11, 56, 65);
+    width: 160px;
+    margin: 4px;
+    margin-left: 5px;
+    font-size: 13px;
+   
+}
+table{
+    width: 263px;
+    border-collapse: collapse;
+    font-size: 10px;
+}
+
+
+.vaccination table{
+    width:100%;
+    font-size: 10px;
+}
+.vaccination th, .vaccination td{
+    /* display: block; */
+    display: inline-block;
+    margin-left: 10px;
+}
+.vaccination .left {
+    margin-left: 23px;
+}
+
+.btn{
+    /* position:fixed ;
+    bottom: 10px;
+    left: 40%; */
+    position: relative;
+    top: 150px;
+}
+.four_six,.print_now{
+    padding: 10px;
+    width: 250px;
+    margin: auto;
+    display: block;
+
+}
+.print_card{
+    position: relative;
+    top: 300px;
+}
+
+@media screen and (max-width :777px) {
+    .body{
+        /* display: none; */
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .btn{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:763px) {
+    .body{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .card-1{
+        margin-right: 0px;
+    }
+    
+}
+@media screen and (max-width:385px) {
+    .card{
+        width: 90vw;
+        height: 220px;
+        /* background-color: red; */
+    }
+    table{
+        /* font-size: 10px; */
+        font-size: 1rem;
+    }
+     .h1{
+        font-size:12px;
+    }
+    table th,tr{
+        font-size: 10px;
+    }
+    .qr-scaner .image{
+        height: 75px;
+        width: 75px;
+        /* margin-bottom: 10px; */
+    }
+    .qr-scaner .image img{
+        height: inherit;
+    }
+    .navbar .main-heading :nth-child(1){
+        font-size: 12px;
+    }
+    .navbar .main-heading h1#small{
+        font-size: 10px;
+        /* color: red; */
+    }
+    .navbar .heading h1{
+        font-size: 6.5px;
+    }
+    .navbar .logo {
+        height: 5.5vh;
+
+    }
+    .navbar .logo img{
+        width: 16px;
+    }
+}
+.velify{
+    margin-right: 10px;
+    /* margin-left: 10px; */
+}
+@media screen and (max-width:322px) {
+    table th,table td,table tr{
+        /* color: red; */
+        font-size: .5rem;
+    }
+  
+    .card{
+        height: 200px;
+    }
+    .qr-scaner .image{
+        height: 70px;
+        width: 70px;
+    }
+    
+}
+
+@media screen and (max-width:305px) {
+}

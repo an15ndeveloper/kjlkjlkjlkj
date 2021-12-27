@@ -1,0 +1,77 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Vaccination Card
+        style 
+            include ../public/style/style.css
+    body 
+        .body
+            .card.card-1
+                .navbar
+                    .flex
+                        .cn 
+
+                        .logo
+                            img(src="../../upload/image/logonew.png", alt="image") 
+                    .heading 
+                        h1 ministry of Health &#38; Family Welfare
+                        h1 Goverment of India
+
+                    .main-heading
+                        h1 Final Certificate of <span id = 'red'>COVID-19</span> Vaccination
+                        h1#small certificate number  
+                        h1#small= cer_id 
+                .card-body  
+                    .qr-scaner 
+                        .image  
+                            img(src= scaner alt="image") 
+            .card.card-2
+                .beneficiary 
+                    .heading 
+                        .h1 Beneficiary Details
+                    .table 
+                        table 
+                            tr 
+                                th name 
+                                td= name  
+                            tr 
+                                th age 
+                                td= age  
+                            tr 
+                                th Gen 
+                                td=gender  
+                            tr 
+                                th Ref ID 
+                                td=uhid   
+                            tr 
+                                th.velify.left   id Velifled
+                                td.left= velifled  
+                .vaccination 
+                    .heading 
+                        .h1 Vaccination Details
+                    .table 
+                        table 
+                            tr 
+                                th Vaccine name 
+                                td.left= vname  
+                            tr 
+                                th Vaccinated by
+                                td.left= vby
+                            tr 
+                                th Vaccination at 
+                                td.left= vat 
+                            tr 
+                                th Date of 1<sup>st</sup> Dose
+                                td=dofd   
+                            tr 
+                                th Date of 2<sup>nd</sup> Dose
+                                td= dosd 
+        .btn 
+             button.four_six Convert To 4-6 Size
+        .print_card  
+             button.print_now Convert To A4 Size
+    script 
+        include ../public/script/index.js

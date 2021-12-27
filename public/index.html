@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for vaccination card </title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+
+<body>
+    <div class="main-body">
+        <div class="heading">
+            <h1>apply for vaccination card</h1>
+            <p class="main">create by anon developer</p>
+        </div>
+        <div class="form">
+            <form action="/create/download" method='post' enctype="multipart/form-data" name='submit'>
+                <input type="text" name="name" placeholder="name">
+                <input type="number" name="age" placeholder="age">
+                <input type="text" name="gender" placeholder="gender">
+                <input type="text" name="vName" placeholder='Vaccine Name'>
+                <input type="text" name="vBy" placeholder='Vaccinated By'>
+                <input type="text" name="vAt"  placeholder='Vaccination At'>
+                <input type="text" name="dFirst"  placeholder='date of first dose'>
+                <input type="text" name="bFirst"  placeholder='batch no of first dose'>
+                <input type="text" name="dSec"  placeholder='date of sec dose'>
+                <input type="text" name="bSec"  placeholder='batch no of sec dose'>
+                <input type="number" name="uhid"  placeholder='UHID Number'>
+                <input type="number" name="certifcateId"  placeholder='Certificate ID'>
+                <input type="text" name="velifled"  placeholder='Velifled by'>
+                <input type="file"  name="scaner" id='upload'>
+                <div class="uploadbtn">
+                    <button id="qr">Upload Qr code</button>
+                </div>
+                <input type="submit" value="create Now" id='submit_now'>
+            </form>
+        </div>
+
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title apply for vaccination card
+        style 
+            include ../public/style/form.css
+    body
+        .main-body
+            .heading 
+                h1 apply for vaccination card
+                p.main Create by anon developer
+            .form
+                form(action="/create/download",method = 'post',enctype="multipart/form-data",name ='submit')
+                    input(type="text",name ="name",placeholder ="name") 
+                    input(type="number",name ="age",placeholder ="age") 
+                    input(type="text",name ="gender",placeholder ="gender") 
+                    input(type="text",name="vName",placeholder = 'Vaccine Name')
+                    input(type="text",name="vBy",placeholder = 'Vaccinated By')
+                    input(type="text",name="vAt", placeholder = 'Vaccination At')
+                    input(type="text",name="dFirst", placeholder = 'date of first dose')
+                    input(type="text",name="bFirst", placeholder = 'batch no of first dose')
+                    input(type="text",name="dSec", placeholder = 'date of sec dose')
+                    input(type="text",name="bSec", placeholder = 'batch no of sec dose')
+                    input(type="number",name="uhid", placeholder = 'UHID Number')
+                    input(type="number",name="certifcateId", placeholder = 'Certificate ID')
+                    input(type="text",name="velifled", placeholder = 'Velifled by')
+                    input(type="file", name="scaner",id = 'upload')
+                    //- input(type="file", name="",id = '')
+                    .uploadbtn 
+                        button#qr Upload Qr Code
+                    input(type="submit", value="Create Now",id='submit_now')
+                
+        script 
+            include ../public/script/script.js

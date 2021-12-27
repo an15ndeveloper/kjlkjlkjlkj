@@ -1,0 +1,3 @@
+*.env
+node_modules/
+public/upload/vc_card_qrcode/*.jpg
